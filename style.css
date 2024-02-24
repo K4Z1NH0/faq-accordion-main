@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+    --Ligt-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+
+    /* Font */
+    --Work-sans:"Work Sans", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 110vh;
+    background-color: var(--Ligt-pink);
+    font-family: var(--Work-sans);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main .bg-desktop{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+main .bg-mobile{
+    display: none;
+}
+
+main .card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0.8rem;
+    margin: 0 auto;
+    margin-top: 11rem;
+    padding: 2rem 2rem;
+    background-color: var(--White);
+    width: 100vh;
+}
+
+main .card .title{
+    display: flex;
+}
+
+main .card .title h1{
+    color: var(--Dark-purple);
+    font-size: 4rem;
+    margin-left: 2rem;
+}
+
+main .card .text1{
+    margin-top: 2rem;
+}
+
+main .card .p1 {
+    margin-top: 1rem;
+    color: var(--Grayish-purple);
+}
+
+main .card .text1, .text2, .text3, .text4{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+main .card .text2, .text3, .text4{
+    margin-top: 1rem;
+}
+
+main .card .text1 h3, .text2 h3, .text3 h3, .text4 h3{
+    color: var(--Dark-purple);
+}
+
+main .card .text1 h3:hover, .text2 h3:hover, .text3 h3:hover, .text4 h3:hover{
+    color: var(--Grayish-purple);
+    cursor: pointer;
+}
+
+main .card .p1, .p2, .p3, .p4{
+    display: none;
+}
+
+main .card .text1 button, .text2 button, .text3 button, .text4 button{
+    border: none;
+    background: none;
+}
+
+main .card .text1 button:hover, .text2 button:hover, .text3 button:hover, .text4 button:hover{
+    cursor: pointer;
+}
+
+main .card button .minus1, .minus2, .minus3, .minus4{
+    display: none;
+}
+
+main .card .line{
+    opacity: 10%;
+    width: 100%;
+    height: 1px;
+    background-color: var(--Grayish-purple); 
+    margin: 2rem 0;
+}
+
+@media (max-width: 1150px){
+    main .card{
+        margin-top: 7em;
+    }
+}
+
+@media (max-width: 855px){
+    main .card{
+        width: 80vh;
+    }
+}
+
+@media (max-width: 835px){
+    .bg-mobile{
+        display: flex !important;
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .bg-desktop{
+        display: none;
+    }
+
+    main .card{
+        margin-top: 15rem;
+    
+}
+
+@media (max-width: 770px){
+    main .card{
+        width: 60vh;
+    }
+
+    main .card .text1 h3, .text2 h3, .text3 h3, .text4 h3{
+        font-size: 0.8rem;
+
+    }
+    
+    main .card .title h1{
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
+
+    main .card .p1, .p2, .p3, .p4{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 545px){
+    main .card{
+        width: 50vh;
+    }
+
+    main .card .text1 h3, .text2 h3, .text3 h3, .text4 h3{
+        font-size: 0.6rem; 
+    }
+    
+    main .card .title h1{
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
+
+    main .card .p1, .p2, .p3, .p4{
+        font-size: 0.5rem;
+    }
+
+    main button img{
+        width: 0.9rem;
+    }
+}
+
+@media (max-width: 425px){
+    main .card{
+        margin-top: 8rem;
+    }
+} 

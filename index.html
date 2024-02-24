@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | FAQ accordion</title>
+<body>
+  <main>
+    <img class="bg-desktop" src="./assets/images/background-pattern-desktop.svg" alt="bg-desktop">
+    <img class="bg-mobile" src="./assets/images/background-pattern-mobile.svg" alt="bg-mobile">
+    <div class="card">
+      <section class="title">
+        <img src="./assets/images/icon-star.svg"><h1>FAQs</h1>
+      </section>
+      <!-- TEXT 1 -->
+      <section class="text1">
+        <h3 onclick="mostrarTexto('p1')">What is Frontend Mentor, and how will it help me?</h3>
+        <button id="btn1" onclick="mostrarTexto('p1')"><img class="plus1" id="btnPlus1" src="./assets/images/icon-plus.svg"><img class="minus1" id="btnMinus1" src="./assets/images/icon-minus.svg"></button>
+      </section>
+      <section id="p1" class="p1">
+        <p>Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
+      </section>
+      <div class="line"></div>
+      <!-- TEXT 2 -->
+      <section class="text2">
+        <h3 onclick="mostrarTexto2('p2')">Is Frontend Mentor free?</h3>
+        <button id="btn2" onclick="mostrarTexto2('p2')"><img class="plus2" id="btnPlus2" src="./assets/images/icon-plus.svg"><img class="minus2" id="btnMinus2" src="./assets/images/icon-minus.svg"></button>
+      </section>
+      <section id="p2" class="p1">
+        <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.</p>
+      </section>
+      <div class="line"></div>
+      <!-- TEXT 3 -->
+      <section class="text3">
+        <h3 onclick="mostrarTexto3('p3')">Can I use Frontend Mentor projects in my portfolio?</h3>
+        <button id="btn3" onclick="mostrarTexto3('p3')"><img class="plus3" id="btnPlus3" src="./assets/images/icon-plus.svg"><img class="minus3" id="btnMinus3" src="./assets/images/icon-minus.svg"></button>
+      </section>
+      <section id="p3" class="p1">
+        <p>Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!</p>
+      </section>
+      <div class="line"></div>
+      <!-- TEXT 4 -->
+      <section class="text4">
+        <h3 onclick="mostrarTexto4('p4')">How can I get help if I'm stuck on a Frontend Mentor challenge?</h3>
+        <button id="btn4" onclick="mostrarTexto4('p4')"><img class="plus4" id="btnPlus4" src="./assets/images/icon-plus.svg"><img class="minus4" id="btnMinus4" src="./assets/images/icon-minus.svg"></button>
+      </section>
+      <section id="p4" class="p1">
+        <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.</p>
+      </section>
+      <div class="line"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
